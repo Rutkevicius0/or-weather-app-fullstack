@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:4000/log';
+const baseUrl = 'http://localhost:5000/api';
 
 export const postRequest = async (url, dataToPost) => {
   try {

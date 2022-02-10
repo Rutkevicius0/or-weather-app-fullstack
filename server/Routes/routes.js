@@ -39,7 +39,7 @@ router.post('/api/weather/current', (req, res) => {
   console.log(
     `Weather condition data at ${req.body.city}, ${req.body.country}  User searched for :`,
   );
-  console.log(req.body.weatherData);
+  console.log(req.body);
 
   const newCurrentWeather = new CurrentWeather(req.body);
 
