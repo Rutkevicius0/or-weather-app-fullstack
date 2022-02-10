@@ -6,7 +6,7 @@ const SearchKeywords = require('../models/searchKeywordsModel');
 
 const CurrentWeather = require('../models/currentWeatherModel');
 
-router.get('/log/searched-locations', async (req, res) => {
+router.get('/api/searched/locations', async (req, res) => {
   try {
     const result = await SearchKeywords.find();
     res.json(result);
@@ -15,7 +15,7 @@ router.get('/log/searched-locations', async (req, res) => {
   }
 });
 
-router.post('/log/searched-locations/new', (req, res) => {
+router.post('/api/searched/locations', (req, res) => {
   console.log(`User searched for: ${req.body.keyword}`);
   console.log(req.body);
   const newSearchedLocation = new SearchKeywords(req.body);
@@ -26,7 +26,7 @@ router.post('/log/searched-locations/new', (req, res) => {
     .catch((err) => res.json(err));
 });
 
-router.get('/log/current-weather', async (req, res) => {
+router.get('/api/weather/current', async (req, res) => {
   try {
     const result = await CurrentWeather.find();
     res.json(result);
@@ -35,7 +35,7 @@ router.get('/log/current-weather', async (req, res) => {
   }
 });
 
-router.post('/log/current-weather/new', (req, res) => {
+router.post('/api/weather/current', (req, res) => {
   console.log(
     `Weather condition data at ${req.body.city}, ${req.body.country}  User searched for :`,
   );

@@ -19,7 +19,7 @@ export default function WeatherPage() {
   useEffect(() => {
     sendRequest('current', id, locationCurrentWeatherHandler);
     sendRequest('forecast', id, locationForecastHandler);
-    postRequest('current-weather/new', {
+    postRequest('weather/current', {
       city: `${city}`,
       country: ` ${country}`,
       weatherData: locationCurrentWeather.current,

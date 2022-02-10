@@ -11,7 +11,7 @@ const LocationsListItem = (props) => {
     <li
       className="list-group-item p-3 mt-2 rounded"
       onClick={() =>
-        postRequest('searched-locations/new', { keyword: ctx.searchInputValue })
+        postRequest('searched/locations', { keyword: ctx.searchInputValue })
       }
     >
       <Link
