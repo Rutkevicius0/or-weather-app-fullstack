@@ -1,0 +1,10 @@
+GET http://localhost:4000/log/searched-locations
+###
+POST http://localhost:4000/log/searched-locations/new
+Content-Type: application/json
+
+{
+    "searchedKeyword": "Kaunas"
+}
+###
+GET http://localhost:4000/log/current-weather

@@ -1,0 +1,25 @@
+{
+  "name": "or-weather-app-backend",
+  "version": "1.0.0",
+  "description": "backend for or-weather-app-react",
+  "main": "server.js",
+  "scripts": {
+    "app": "node server.js & npm start --prefix client",
+    "start": "node server.js"
+  },
+  "author": "O.R.",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "morgan": "^1.10.0"
+  },
+  "keywords": [
+    "front",
+    "+",
+    "back"
+  ],
+  "devDependencies": {}
+}
