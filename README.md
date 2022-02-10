@@ -19,7 +19,7 @@ Runs frontend and backend of the app.
 
 ### `npm start`
 
-Runs backend app on http://localhost:4000
+Runs backend app on http://localhost:5000
 
 ### `npm start --prefix client`
 
